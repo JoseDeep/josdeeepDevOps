@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trains - Railway Booking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 700px;
+      margin-bottom: 25px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    th, td {
+      padding: 14px 18px;
+      text-align: center;
+      font-size: 16px;
+    }
+    th {
+      background: #ff9800;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    tr:nth-child(even) {
+      background: rgba(255, 255, 255, 0.15);
+    }
+    tr:hover {
+      background: rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #fff;
+      background: #ff9800;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    a:hover {
+      background: #e68900;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>🚆 Available Trains</h1>
+  <table>
+    <tr>
+      <th>Train</th>
+      <th>Departure</th>
+      <th>Arrival</th>
+    </tr>
+    <tr>
+      <td>Chennai Express</td>
+      <td>Chennai</td>
+      <td>Delhi</td>
+    </tr>
+    <tr>
+      <td>Hyderabad Mail</td>
+      <td>Hyderabad</td>
+      <td>Mumbai</td>
+    </tr>
+    <tr>
+      <td>Bangalore SF</td>
+      <td>Bangalore</td>
+      <td>Kolkata</td>
+    </tr>
+  </table>
+  <a href="booking.html">🎫 Book Ticket</a>
+  <a href="welcome.html">⬅ Back</a>
+</body>
+</html>

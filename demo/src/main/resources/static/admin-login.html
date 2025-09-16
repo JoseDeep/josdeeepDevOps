@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login - Railway Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+      text-align: center;
+      color: #fff;
+      width: 300px;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #ffcc00;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin: 10px 0 5px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    input[type="submit"] {
+      background: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    input[type="submit"]:hover {
+      background: #ffaa00;
+    }
+    a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h1>Admin Login</h1>
+    <form action="admin-dashboard.html" method="get">
+      <label>Username:</label>
+      <input type="text" name="username" value="admin" required>
+      
+      <label>Password:</label>
+      <input type="password" name="password" value="admin123" required>
+      
+      <input type="submit" value="Login">
+    </form>
+    <p><a href="login.html">⬅ Back</a></p>
+  </div>
+</body>
+</html>

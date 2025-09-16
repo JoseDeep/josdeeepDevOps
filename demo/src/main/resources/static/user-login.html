@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Login - Railway Booking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+    .login-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 20px;
+      width: 320px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      backdrop-filter: blur(6px);
+    }
+    h1 {
+      margin-bottom: 25px;
+      font-size: 26px;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      margin-bottom: 15px;
+      font-size: 16px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+    input:focus {
+      border: 2px solid #ff9800;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      background: #ff9800;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    input[type="submit"]:hover {
+      background: #e68900;
+      transform: scale(1.05);
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 15px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+    .back-link:hover {
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h1>🔑 User Login</h1>
+    <form action="welcome.html" method="get">
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" value="user1" required>
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" value="user123" required>
+
+      <input type="submit" value="Login">
+    </form>
+    <a href="login.html" class="back-link">⬅ Back</a>
+  </div>
+</body>
+</html>

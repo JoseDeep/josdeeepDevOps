@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Details - Railway Booking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      color: #fff;
+    }
+    h1 {
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+    .ticket {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      border-radius: 15px;
+      width: 350px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      backdrop-filter: blur(6px);
+    }
+    .ticket h2 {
+      margin-bottom: 15px;
+      font-size: 22px;
+      color: #ffcc00;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+      font-size: 16px;
+    }
+    th {
+      background: #ff9800;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background: rgba(255, 255, 255, 0.15);
+    }
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 18px;
+      border-radius: 10px;
+      background: #ff9800;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    a:hover {
+      background: #e68900;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Booking Confirmed!</h1>
+  <div class="ticket">
+    <h2>📋 Your Ticket Details</h2>
+    <table id="bookingTable">
+      <tr>
+        <th>Train</th>
+        <th>Quantity</th>
+      </tr>
+      <!-- Ticket details will be inserted dynamically -->
+      <tr>
+        <td>Chennai Express</td>
+        <td>2</td>
+      </tr>
+    </table>
+    <a href="welcome.html">⬅ Back to Home</a>
+  </div>
+</body>
+</html>
