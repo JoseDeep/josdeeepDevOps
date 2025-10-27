@@ -6,7 +6,7 @@
 trigger:
 - main
 
-pool: sample
+pool: jdtest
 
 steps:
 - task: Maven@3
