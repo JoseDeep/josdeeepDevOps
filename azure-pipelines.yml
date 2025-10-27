@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: jdtest
+  name: hello
 
 steps:
 - task: Maven@3
