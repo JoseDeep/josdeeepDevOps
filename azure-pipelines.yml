@@ -15,7 +15,7 @@ steps:
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkSourceOption: 'PreInstalled'     # ✅ Tells pipeline to use system JDK
-    jdkVersionOption: '1.24'
+    jdkVersionOption: '1.21'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
